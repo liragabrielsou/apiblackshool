@@ -28,4 +28,4 @@ route.post('/atividade',AtividadesController.createAtividades)//ROTA PARA CRIAR 
 route.put('/atividade/:id',AtividadesController.updateAtividades)//ROTA PARA ATUALIZAR ATIVIDADES
 route.delete('/atividade/:id',AtividadesController.deleteAtividades)//ROTA PARA DELETAR AS ATIVIDADES
 
-module.exports = route 
+module.exports = route

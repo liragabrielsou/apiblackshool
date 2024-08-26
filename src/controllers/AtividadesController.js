@@ -42,10 +42,9 @@ module.exports = {
 
         if (nome && descricao && peso_nota && data_entrega && turma_id) {
 
-            let atividades = await AtividadesServices.createAtividades(nome, descricao, data_entrega, peso_nota, turma_id)
+            await AtividadesServices.createAtividades(nome, descricao, data_entrega, peso_nota, turma_id)
 
             json.result = {
-                id:atividades.insertId,
                 nome,
                 descricao,
                 data_entrega,
